@@ -143,10 +143,12 @@
   
    <div class="well">
    <h4>Recent Posts</h4>
+   
    <% @articles.each do |a| %>
    
+    <small>Autheur : <%= a.user.username %></small><br /> 
     <strong><%= link_to a.title, a %></strong>
-     <p><%= truncate(a.body) %></p> 
+    <p><%= truncate(a.body) %></p> 
    
    <% end %>
    </div>

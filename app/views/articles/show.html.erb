@@ -1,12 +1,16 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
-  <%= @article.title %>
+  <strong><%= @article.user.username %> </strong>
 </p>
 
 <p>
-  <strong>Body:</strong>
+   
+   Tietel :<strong><%= @article.title %></strong>
+</p>
+
+<p>
+  
   <%= @article.body %>
 </p>
 
