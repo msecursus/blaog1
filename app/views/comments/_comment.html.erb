@@ -1,0 +1,20 @@
+<div class="media">
+  
+  <div class="pull-left">
+    <%= comment.user.username %>
+    
+    
+    
+  </div>
+  
+  <div class="media-body">
+    
+    <p class="pull-right">
+    <%= time_ago_in_words(comment.created_at) %>
+    </p><br />
+    <p style="color:#4ca598;"> <%= comment.body %> </p>
+  </div>
+  
+</div>
+<%= link_to 'Edit', edit_article_comment_path(comment.article, comment) %> |
+<%= link_to 'Delete', [comment.article, comment], method: :delete, data: {confirm: "SURE ? Delete ?" } %>
