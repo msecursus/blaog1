@@ -1,7 +1,18 @@
-<h1>Edit</h1>
-<%= simple_form_for([@article, @comment]) do |f| %>
-
-  <%= f.input :body %>
-  <%= f.submit %>
-
-<% end %>
+<div class="container contmargtop">
+    <div class="panel panel-default">
+      
+      <div class="panel-heading">
+        <h1>Edit</h1>
+      </div>
+      
+      <div class="panel-body"style="background:#f4f4ad">
+        <%= simple_form_for([@article, @comment]) do |f| %>
+        
+          <%= f.input :body %>
+          <%= f.submit %>
+        
+        <% end %>
+      </div>
+      
+    </div>
+</div>

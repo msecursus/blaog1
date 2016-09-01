@@ -1,77 +1,84 @@
+
+
 <% if current_user %>
 
-<footer class="footer-distributed">
-  
-  <div class="footer-right">
-    <a href="#"><i class="fa fa-facebook"></i></a>
-    <a href="#"><i class="fa fa-twitter"></i></a>
-    <a href="#"><i class="fa fa-linkedin"></i></a>
-    <a href="#"><i class="fa fa-github"></i></a>
-  </div>
-  
-  <div class="footer-left">
-    
-    <p class="footer-links">
-      .
-      <a class="page-scroll" href="#portfolio">Contact Us</a> . | . <a class="page-scroll" href="#services">About Us</a>
-      .
-    </p>
-    
-    <p> paragr</p>
-    
-  </div>
-  
-</footer>
+<footer style="border-top: 10px solid #292c2f;"">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
 <% else %>
 
-<footer class="footer-distributed">
-  
-    <div class="footer-left">
-      
-        <h3>Company<span>logo</span></h3>
-        
-         <p class="footer-links">
-        <a href="#">Home</a>
-        ·
-        <a href="#">Blog</a>
-        ·
-        <a href="#">Pricing</a>
-        ·
-        <a href="#">About</a>
-        ·
-        <a href="#">Faq</a>
-        ·
-        <a href="#">Contact</a>
-        </p>
-        <p class="footer-company-name">Company Name &copy; 2015</p>
-        
-        <div class="footer-icons">
-          
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
-          
+    <footer style="background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+      font: bold 16px sans-serif;">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
+                </div>
+            </div>
         </div>
-        
-    </div>
-    
-    <!-- einde footer right -->
-    
-    <div class="footer-right">
-      
-      <p>Contact Us</p>
-      
-      <form action="#" method="post">
-        <input type="text" name="email" placeholder="Email" />
-        <textarea name="message" placeholder="Message"></textarea>
-        <button>Send</button>
-      </form>
-      
-    </div>
-      
-</footer>
+
+    </footer>
 
 <% end %>
-
